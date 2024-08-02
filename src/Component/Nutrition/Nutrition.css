@@ -1,0 +1,60 @@
+.Nutrition {
+    padding: 3rem 0rem;
+    width: 100%;
+    background-color: #1a667a;
+}
+
+.Nutrition-main {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Nutrition-box {
+    display: flex;
+    gap: 2rem;
+}
+
+.nutrition-left {
+    width: 25%;
+}
+
+.nutrition-mid {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nutrition-mid img {
+    width: 80%;
+    position: relative;
+    z-index: 2;
+}
+
+.nutrition-mid:after {
+    content: '';
+    background-color: white;
+    border-radius:  51% 49% 49% 51% / 50% 49% 51% 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    z-index: 1;
+}
+
+.nutrition-right {
+    width: 25%;
+}
+
+@media (min-width: 1200px) {
+    .Nutrition-main {
+        max-width: 1140px;
+    }
+}
+
+@media only screen and (max-width: 680px) {}
