@@ -1,10 +1,37 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Overview.css"
 import Form from '../Form/Form'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import ScrollReveal from 'scrollreveal'
 
 const Overview = () => {
+
+    useEffect(() => {
+        const sr = ScrollReveal({
+            origin: 'right',
+            distance: '80px',
+            duration: 2000,
+            reset: true,
+        });
+
+        sr.reveal('.overview-right', {})
+
+        return () => sr.destroy();
+    }, []);
+    useEffect(() => {
+        const sr = ScrollReveal({
+            origin: 'left',
+            distance: '80px',
+            duration: 2000,
+            reset: true,
+        });
+
+        sr.reveal('.overview-left', {})
+
+        return () => sr.destroy();
+    }, []);
+
     return (
         <div className="overview">
             <div className="about-main">

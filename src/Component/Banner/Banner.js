@@ -1,8 +1,7 @@
 import React from 'react'
 import bannerimg from "../../Assets/Banner/banner.jpg"
 import "./Banner.css"
-
-import { FaBriefcase, FaCartShopping, } from "react-icons/fa6";
+// import { FaBriefcase, FaCartShopping, } from "react-icons/fa6";
 
 const Banner = () => {
 
@@ -14,7 +13,7 @@ const Banner = () => {
                 <div className="banner-image">
                     <img src={bannerimg} alt="grandthum bhutani group" />
                 </div>
-                <div className="banner-bottom">
+                {/* <div className="banner-bottom">
                     <div className="banner-items">
                         <div className="banner-card">
                             <FaBriefcase />
@@ -31,7 +30,7 @@ const Banner = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

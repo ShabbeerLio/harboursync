@@ -66,7 +66,7 @@ const Form = () => {
     
     return (
         <>
-            <h4>Interested in GRANDTHUM?</h4>
+            <h4>Interested in HARBOURSYNC EXPIMP?</h4>
             {messageSent ? (
                 <div className='form-message'>
                     <p>Message sent successfully!</p>
@@ -117,7 +117,7 @@ const Form = () => {
                     />
                 </div>
                 <button type="submit" className="btn btn-primary">
-                    Book A Site Visit
+                    Contact Now
                 </button>
             </form>
             )}

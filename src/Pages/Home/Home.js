@@ -5,6 +5,8 @@ import About from '../../Component/About/About'
 import Highlights from '../../Component/Highlights/Highlights'
 import { useLocation } from 'react-router-dom'
 import Nutrition from '../../Component/Nutrition/Nutrition'
+import Contact from '../../Component/Contact/Contact'
+import "./Home.css"
 
 const Home = (props) => {
     /* global dataLayer */
@@ -45,11 +47,22 @@ const Home = (props) => {
 
     return (
         <div className='home'>
-            <Banner />
-            <About />
-            <Overview />
-            <Highlights />
-            <Nutrition />
+            <section className="Banner-box" id="home">
+                <Banner />
+            </section>
+            <section className="Banner-box" id="about">
+                <About />
+            </section>
+            <section className="Banner-box" id="overview">
+                <Overview />
+                <Highlights />
+            </section>
+            <section className="Banner-box" id="benefits">
+                <Nutrition />
+            </section>
+            <section className="Banner-box" id="contact">
+                <Contact />
+            </section>
         </div>
     )
 }

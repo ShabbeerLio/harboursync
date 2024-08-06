@@ -1,11 +1,8 @@
 .Footer {
+  padding: 5rem 0 0 0;
   width: 100%;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    145deg,
-    rgba(255, 255, 255, 1) 0%,
-    #1a667a 82%
-  );
+  position: relative;
+  background-color: #f8f7f5;
 }
 
 .Footer-main,
@@ -15,136 +12,173 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
-.footer-box {
-  padding-top: 5rem;
-  text-align: center;
+.footer-detail-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #adadad;
+  padding-bottom: 2rem;
 }
 
-.footer-box img {
-  width: 20%;
-  margin-bottom: 2rem;
-}
-
-.footer-item ul {
+.footer-down {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* margin-top: 3rem; */
+  padding: 15px 0;
+}
+
+.footer-left img {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.footer-right-box {
+  width: 80%;
+}
+
+.footer-right-quick {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* margin-bottom: 1rem; */
+}
+
+.footer-right-quick h2 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  padding-right: 30px;
+}
+
+.footer-right-quick h2:after {
+  content: "";
+  background-color: #1a667a;
+  display: flex;
+  height: 2px;
+  width: 50%;
+  margin-top: 5px;
+}
+
+.footer-right-quick ul {
+  display: flex;
   padding: 0;
+  margin-bottom: 1rem;
+
 }
-.footer-item {
-  text-align: center;
-}
-.footer-item p{
-  color: black;
-}
-.footer-item ul li {
+
+.footer-right-quick ul li {
   display: flex;
   align-items: center;
+  padding-right: 20px;
 }
-.footer-item ul li a {
-  display: flex;
-  align-items: center;
+
+.footer-right-quick ul li a {
   text-decoration: none;
   color: black;
-  margin: 0 10px;
-  font-size: 16px;
+  font-size: 14px;
 }
-.footer-item:nth-child(3) ul li a{
-  font-size: 80px;
-  font-weight: 700;
+
+.footer-right-quick ul li a svg {
+  margin-right: 10px;
+  font-size: 20px;
 }
-.footer-item ul li a:hover {
+
+.footer-right-quick ul li a:hover {
+  text-decoration: none;
   color: #1a667a;
 }
-.footer-item ul li a svg{
-  margin-right: 28px;
-  font-size: 80px;
-  font-weight: 700;
-}
-
-.footer-copyright {
-  width: 100%;
-  border-top: 1px solid rgb(63, 63, 63);
-  margin-top: 50px;
-}
-
-.footer-copyright p a {
-  color: black;
-  text-decoration: none;
-}
-
 
 .footer-copyright p {
-  font-size: 14px;
-  padding: 20px 0px;
-  display: flex;
-  justify-content: center;
-  color: black;
-  text-decoration: none;
   margin: 0;
-}
-
-.footer-item-disclaimer p {
   font-size: 14px;
-  display: flex;
-  justify-content: center;
-  color: black;
-  text-decoration: none;
-  margin: 0;
-}
-.footer-item-disclaimer .disclaimer {
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  /* color: #283664; */
-}
-.footer-item-policy {
-  padding: 2rem 0;
-}
-.footer-item-policy a {
-  color: black;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
 }
 
 @media (min-width: 1200px) {
-  .Footer-main,
+  .Footer-main {
+    max-width: 1140px;
+  }
+
   .footer-down {
     max-width: 1140px;
   }
 }
 
+@media only screen and (max-width: 990px) {
+  .Footer-main {
+    max-width: 720px;
+  }
+}
+
 @media only screen and (max-width: 680px) {
-
-  .footer-item ul li a {
-    margin: 0 8px;
-    font-size: 15px;
+  .footer-down {
+    flex-direction: column;
+    gap: 15px;
   }
 
-  .footer-box img {
-    width: 40%;
-    margin-bottom: 2rem;
+  .Footer-main {
+    gap: 0;
+    display: block;
   }
 
-  .footer-item p{
-    font-size: 14px;
+  .footer-left {
+    width: 100%;
   }
 
-  .footer-item:nth-child(3) ul li a{
-    font-size: 30px;
-    font-weight: 700;
+  .footer-left a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .footer-item ul li a svg{
-    font-size: 30px;
-    margin-right: 15px;
-    font-weight: 700;
+
+  .footer-left img {
+    width: 50%;
   }
+
+  .Footer-main {
+    max-width: 520px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .Footer {
+    padding: 2rem 0 0 0;
+  }
+
+  .footer-right-quick h2:after {
+    width: 100%;
+  }
+
+  .footer-right-quick {
+    align-items: center;
+  }
+
+  .footer-right-quick ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-detail-box {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+
+  .footer-right-quick ul li {
+    padding-bottom: 5px;
+  }
+
+  .footer-copyright {
+    justify-content: center;
+  }
+
   .footer-copyright p {
-    padding: 10px 0px;
     font-size: 12px;
-    text-align: center;
   }
 }

@@ -1,0 +1,85 @@
+.Contact {
+    padding: 6rem 0rem;
+    width: 100%;
+    background-color: #fafafa;
+    background-attachment: fixed;
+    background-image: url("../../Assets/Director/contact.jpg");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Contact-main {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.Contact-box {
+    display: flex;
+    gap: 2rem;
+}
+
+.Contact-box-left {
+    width: 50%;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+}
+
+.contact-card{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #1a677aab;
+    border-radius: 8px;
+    padding: 2rem;
+}
+.contact-card img{
+    width: 30%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.contact-detail{
+    margin-left: 1rem;
+}
+.contact-detail h4{
+    font-size: 30px;
+    color: white;
+}
+.contact-detail p{
+    margin: 0;
+    color: white;
+}
+
+.Contact-box-right {
+    width: 50%;
+    background-color: #1a677aab;
+    border-radius: 8px;
+    padding: 2rem;
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    .Contact-main {
+        max-width: 1140px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .Contact-box {
+        flex-wrap: wrap;
+    }
+    
+    .Contact-box-left ,
+    .Contact-box-right {
+        width: 100%;
+    }
+}

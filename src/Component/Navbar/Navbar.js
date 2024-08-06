@@ -1,16 +1,44 @@
 import React, { useEffect, useState } from 'react'
 import "./Navbar.css"
 import Logo from "../../Assets/logo.png"
-import { Link } from 'react-router-dom';
 import { IoLogoWhatsapp } from "react-icons/io5";
 import FormFloat from './FormFloat';
+import { Link } from 'react-router-dom';
 
 const Navbar = (props) => {
-
     const [activeLink, setActiveLink] = useState('/');
     const [isCollapseOpen, setIsCollapseOpen] = useState(false);
     const [formopen, setFormopen] = useState(false);
     const [showEnquiry, setShowEnquiry] = useState(false);
+
+    useEffect(() => {
+        const sections = document.querySelectorAll('section[id]');
+
+        function scrollActive() {
+            const scrollY = window.scrollY;
+
+            sections.forEach(current => {
+                const sectionHeight = current.offsetHeight;
+                const sectionTop = current.offsetTop - 50 + 80;
+                const sectionId = current.getAttribute('id');
+
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    document.querySelector(`.nav-menu a[href*=${sectionId}]`).classList.add('active-link');
+                } else {
+                    document.querySelector(`.nav-menu a[href*=${sectionId}]`).classList.remove('active-link');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', scrollActive);
+
+        return () => {
+            window.removeEventListener('scroll', scrollActive);
+        };
+    }, []);
+
+
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -27,10 +55,10 @@ const Navbar = (props) => {
 
 
     const handleLinkClick = (path) => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'auto'
-        });
+        // window.scrollTo({
+        //     top: 0,
+        //     behavior: 'auto'
+        // });
         setActiveLink(path);
         closeMenu();
     };
@@ -65,13 +93,13 @@ const Navbar = (props) => {
                         <div className="container-fluid">
                             <div className="company-logo">
                                 <div className="company-logo-box">
-                                    <Link
-                                        className={`nav-link ${activeLink === '/' ? 'active' : ''}`}
-                                        to="/"
-                                        // onClick={() => handleLinkClick('/')}
+                                    <a
+                                        className={`nav-link ${activeLink === '#' ? 'active' : ''}`}
+                                        href="#"
+                                    // onClick={() => handleLinkClick('/')}
                                     >
-                                        <img src={Logo} alt="grandthum bhutani" />
-                                    </Link>
+                                        <img src={Logo} alt="" />
+                                    </a>
                                 </div>
                             </div>
                             <div className="nav-button">
@@ -92,62 +120,49 @@ const Navbar = (props) => {
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul className="navbar-nav ml-auto">
                                         <li className="nav-item">
-                                            <Link
-                                                className={`nav-link ${activeLink === '/' ? 'active' : ''}`}
-                                                to="/"
-                                                onClick={() => handleLinkClick('/')}
+                                            <a
+                                                className={`nav-link ${activeLink === '#home' ? 'active' : ''}`}
+                                                href="#home"
+                                                onClick={() => handleLinkClick('#home')}
                                             >
                                                 Home
-                                            </Link>
+                                            </a>
                                         </li>
                                         <li className="nav-item">
-                                            <Link
-                                                className={`nav-link ${activeLink === '/gallery' ? 'active' : ''}`}
-                                                to="/gallery"
-                                                onClick={() => handleLinkClick('/gallery')}
+                                            <a
+                                                className={`nav-link ${activeLink === '#about' ? 'active' : ''}`}
+                                                href="#about"
+                                                onClick={() => handleLinkClick('#about')}
                                             >
-                                                Gallery
-                                            </Link>
+                                                About
+                                            </a>
                                         </li>
                                         <li className="nav-item">
-                                            <Link
-                                                className={`nav-link ${activeLink === '/price-list' ? 'active' : ''}`}
-                                                to="/price-list"
-                                                onClick={() => handleLinkClick('/price-list')}
-                                            >Price List</Link>
+                                            <a
+                                                className={`nav-link ${activeLink === '#overview' ? 'active' : ''}`}
+                                                href="#overview"
+                                                onClick={() => handleLinkClick('#overview')}
+                                            >Overview</a>
                                         </li>
                                         <li className="nav-item">
-                                            <Link
-                                                className={`nav-link ${activeLink === '/master-plan' ? 'active' : ''}`}
-                                                to="/master-plan"
-                                                onClick={() => handleLinkClick('/master-plan')}
-                                            >Master Plan</Link>
+                                            <a
+                                                className={`nav-link ${activeLink === '#benefits' ? 'active' : ''}`}
+                                                href="#benefits"
+                                                onClick={() => handleLinkClick('#benefits')}
+                                            >Benefits</a>
                                         </li>
                                         <li className="nav-item">
-                                            <Link
-                                                className={`nav-link ${activeLink === '/floor-plan' ? 'active' : ''}`}
-                                                to="/floor-plan"
-                                                onClick={() => handleLinkClick('/floor-plan')}
-                                            >Floor Plan</Link>
+                                            <a
+                                                className={`nav-link ${activeLink === '#contact' ? 'active' : ''}`}
+                                                href="#contact"
+                                                onClick={() => handleLinkClick('#contact')}
+                                            >Contact</a>
                                         </li>
-                                        <li className="nav-item">
-                                            <Link
-                                                className={`nav-link ${activeLink === '/location' ? 'active' : ''}`}
-                                                to="/location"
-                                                onClick={() => handleLinkClick('/location')}
-                                            >Location</Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link
-                                                className={`nav-link ${activeLink === '/site-visit' ? 'active' : ''}`}
-                                                to="/site-visit"
-                                                onClick={() => handleLinkClick('/site-visit')}
-                                            >Book A Site Visit</Link>
-                                        </li>
+
                                         <div className="nav-action">
                                             <div className="call-button">
                                                 <p>
-                                                    <Link to='tel: +918800150948'>
+                                                    <Link to='tel: +917634841544'>
                                                         <svg width="1em" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
                                                             <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
                                                                 <path strokeDasharray="64" strokeDashoffset="64" d="M8 3C8.5 3 10.5 7.5 10.5 8C10.5 9 9 10 8.5 11C8 12 9 13 10 14C10.3943 14.3943 12 16 13 15.5C14 15 15 13.5 16 13.5C16.5 13.5 21 15.5 21 16C21 18 19.5 19.5 18 20C16.5 20.5 15.5 20.5 13.5 20C11.5 19.5 10 19 7.5 16.5C5 14 4.5 12.5 4 10.5C3.5 8.5 3.5 7.5 4 6C4.5 4.5 6 3 8 3Z">
@@ -168,7 +183,7 @@ const Navbar = (props) => {
                                                                 </path>
                                                             </g>
                                                         </svg>
-                                                        8800150948
+                                                        7634841544
                                                     </Link>
                                                 </p>
                                             </div>
@@ -178,7 +193,7 @@ const Navbar = (props) => {
                             </div>
                             <div className="fix-icon-call">
                                 <span className='shine'></span>
-                                <Link to='tel: +918800150948'>
+                                <Link to='tel: +917634841544'>
                                     <svg width="1em" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
                                         <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
                                             <path strokeDasharray="64" strokeDashoffset="64" d="M8 3C8.5 3 10.5 7.5 10.5 8C10.5 9 9 10 8.5 11C8 12 9 13 10 14C10.3943 14.3943 12 16 13 15.5C14 15 15 13.5 16 13.5C16.5 13.5 21 15.5 21 16C21 18 19.5 19.5 18 20C16.5 20.5 15.5 20.5 13.5 20C11.5 19.5 10 19 7.5 16.5C5 14 4.5 12.5 4 10.5C3.5 8.5 3.5 7.5 4 6C4.5 4.5 6 3 8 3Z">
@@ -203,7 +218,7 @@ const Navbar = (props) => {
                             </div>
                             <div className="fix-icon">
                                 <span className='shine'></span>
-                                <Link to="https://wa.me/+918800150948">
+                                <Link to="https://wa.me/+917634841544">
                                     <IoLogoWhatsapp />
                                 </Link>
                             </div>

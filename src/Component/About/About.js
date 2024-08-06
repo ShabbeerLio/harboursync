@@ -1,16 +1,34 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./About.css"
 import Aboutimg from "../../Assets/About/about.jpg"
-import { Link } from 'react-router-dom'
+import ScrollReveal from 'scrollreveal'
 
 const About = () => {
 
-    const toTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'auto'
+    useEffect(() => {
+        const sr = ScrollReveal({
+            origin: 'right',
+            distance: '80px',
+            duration: 2000,
+            reset: true,
         });
-    }
+
+        sr.reveal('.about-right', {})
+
+        return () => sr.destroy();
+    }, []);
+    useEffect(() => {
+        const sr = ScrollReveal({
+            origin: 'left',
+            distance: '80px',
+            duration: 2000,
+            reset: true,
+        });
+
+        sr.reveal('.about-left', {})
+
+        return () => sr.destroy();
+    }, []);
 
     return (
         <div className="aboutUs">
@@ -27,9 +45,9 @@ const About = () => {
                             <p>The company prides itself on its extensive network of reliable suppliers and logistics partners, which enables it to deliver products promptly and efficiently to clients around the world. HARBOURSYNC EXPIMP PRIVATE LIMITED’s portfolio includes agricultural products, textiles, machinery, and other consumer goods, catering to a wide array of industries and markets.</p>
                         </div>
                         <div className="about-button">
-                            <Link to="/site-visit" onClick={toTop}>
+                            <a href="#contact">
                                 <p>Contact Now</p>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className="about-right">

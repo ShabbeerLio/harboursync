@@ -147,22 +147,23 @@
 
 .call-button p {
   margin: 0;
-  display: inline;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 5px;
   text-decoration: none;
-  border-radius: 5px;
   color: black;
-  width: 130px;
+  width: 180px;
   padding: 10px 20px;
   font-weight: 500;
-  transition: opacity 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   cursor: pointer;
   transition: all 0.3s;
   background-color: #1a667a;
   border-radius: 5px;
   margin-left: 20px;
+  position: absolute;
+  top: 25%;
+  right: 2%;
 }
 
 .call-button p a {
@@ -368,6 +369,13 @@
   }
   .fix-icon-enquery {
     right: -5%;
+  }
+
+  .call-button p {
+    display: inline;
+    position: relative;
+    top: 0;
+    right: 0;
   }
 }
 @media only screen and (max-width: 540px) {
