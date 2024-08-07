@@ -7,6 +7,7 @@ import { useLocation } from 'react-router-dom'
 import Nutrition from '../../Component/Nutrition/Nutrition'
 import Contact from '../../Component/Contact/Contact'
 import "./Home.css"
+import Products from '../../Component/Products/Products'
 
 const Home = (props) => {
     /* global dataLayer */
@@ -55,9 +56,10 @@ const Home = (props) => {
             </section>
             <section className="Banner-box" id="overview">
                 <Overview />
-                <Highlights />
             </section>
-            <section className="Banner-box" id="benefits">
+            <section className="Banner-box" id="fox-nuts">
+                <Products />
+                <Highlights />
                 <Nutrition />
             </section>
             <section className="Banner-box" id="contact">

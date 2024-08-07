@@ -8,7 +8,7 @@ const SocialMedia = () => {
     return (
         <>
             <div className="media-items">
-                <Link to={"https://x.com/kish7634?t=1fEQm3Y7m5lKHCItBp65HQ&s=08"}>
+                <Link to={"https://x.com/RamKishan___?t=P5bvlsgHQ38vfw6NRibdGA&s=08"}>
                     <FaTwitter />
                 </Link>
                 <Link to={"https://www.instagram.com/kishan_9r?utm_source=qr&igsh=cWxsd3g4NGRwcHlr"}>

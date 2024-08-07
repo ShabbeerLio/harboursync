@@ -32,22 +32,18 @@
 }
 
 .overview-left {
-  width: 30%;
+  width: 45%;
   height: 100%;
 }
 
-.overview-left .overview-form {
-  padding: 2rem;
+.overview-left .overview-form img{
+  width: 100%;
+  object-fit: cover;
   border-radius: 8px;
-  background-color: #fafafa;
-}
-.overview-left .overview-form h4{
-  font-size: 18px;
-  margin-bottom: 25px;
 }
 
 .overview-right {
-  width: 70%;
+  width: 55%;
 }
 
 .overview-title h3 {

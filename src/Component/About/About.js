@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import "./About.css"
-import Aboutimg from "../../Assets/About/about.jpg"
+import Aboutimg from "../../Assets/About/about.jpeg"
 import ScrollReveal from 'scrollreveal'
 
 const About = () => {

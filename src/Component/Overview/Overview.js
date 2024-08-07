@@ -4,6 +4,7 @@ import Form from '../Form/Form'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import ScrollReveal from 'scrollreveal'
+import overimg from "../../Assets/Overview/overview.jpg"
 
 const Overview = () => {
 
@@ -38,7 +39,7 @@ const Overview = () => {
                 <div className="overview-item">
                     <div className="overview-left">
                         <div className="overview-form">
-                            <Form />
+                            <img src={overimg} alt="" />
                         </div>
                     </div>
                     <div className="overview-right">

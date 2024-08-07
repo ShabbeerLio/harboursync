@@ -4,6 +4,7 @@ import Logo from "../../Assets/logo.png"
 import { IoLogoWhatsapp } from "react-icons/io5";
 import FormFloat from './FormFloat';
 import { Link } from 'react-router-dom';
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Navbar = (props) => {
     const [activeLink, setActiveLink] = useState('/');
@@ -144,12 +145,17 @@ const Navbar = (props) => {
                                                 onClick={() => handleLinkClick('#overview')}
                                             >Overview</a>
                                         </li>
-                                        <li className="nav-item">
-                                            <a
-                                                className={`nav-link ${activeLink === '#benefits' ? 'active' : ''}`}
-                                                href="#benefits"
-                                                onClick={() => handleLinkClick('#benefits')}
-                                            >Benefits</a>
+                                        <li className="nav-item dropdown">
+                                            <a className="nav-link dropdown-toggle"
+                                                href="#" id="navbarDropdown"
+                                                role="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Our Products
+                                            </a>
+                                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a className={`dropdown-item ${activeLink === '#fox-nuts' ? 'active' : ''}`} href="#fox-nuts" onClick={() => closeMenu('#fox-nuts')}> <RiArrowDropDownLine />Fox Nuts (Makhana)</a></li>
+                                            </ul>
                                         </li>
                                         <li className="nav-item">
                                             <a

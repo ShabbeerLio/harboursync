@@ -1,0 +1,36 @@
+.Products {
+    padding: 6rem 0rem;
+    width: 100%;
+    background-color: white;
+}
+
+.Products-main {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Products-box {
+    padding: 2rem;
+    background-color: #1a667a;
+    border-radius: 8px;
+    color: white;
+}
+
+.Products-box .about-title h1 {
+    color: white;
+}
+
+.Products-box .about-title span {
+    -webkit-text-stroke: 0.5px white;
+}
+
+@media (min-width: 1200px) {
+    .Products-main {
+        max-width: 1140px;
+    }
+}
+
+@media only screen and (max-width: 990px) {}
