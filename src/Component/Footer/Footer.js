@@ -29,7 +29,7 @@ const Footer = (props) => {
                                     <a href="#overview">Overview</a>
                                 </li>
                                 <li>
-                                    <a href="#benefits">Benefits</a>
+                                    <a href="#fox-nuts">Our Products</a>
                                 </li>
                                 <li>
                                     <a href="#contact">Contact</a>
