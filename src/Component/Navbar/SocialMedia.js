@@ -11,7 +11,7 @@ const SocialMedia = () => {
                 <Link to={"https://x.com/RamKishan___?t=P5bvlsgHQ38vfw6NRibdGA&s=08"}>
                     <FaTwitter />
                 </Link>
-                <Link to={"https://www.instagram.com/kishan_9r?utm_source=qr&igsh=cWxsd3g4NGRwcHlr"}>
+                <Link to={"https://www.instagram.com/ramkishan__9?utm_source=qr&igsh=cWxsd3g4NGRwcHlr"}>
                     <FaInstagram />
                 </Link>
                 <Link to={"https://www.facebook.com/share/xMd6H2HeYadMv27u/?mibextid=qi2Omg"}>

@@ -66,7 +66,7 @@ const Form = () => {
     
     return (
         <>
-            <h4>Interested in HARBOURSYNC EXPIMP?</h4>
+            <h4>Drop Us a Line</h4>
             {messageSent ? (
                 <div className='form-message'>
                     <p>Message sent successfully!</p>

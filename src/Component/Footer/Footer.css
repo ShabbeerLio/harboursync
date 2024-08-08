@@ -93,6 +93,9 @@
   text-decoration: none;
   color: #1a667a;
 }
+.footer-right-quick p{
+  text-align: center;
+}
 
 .footer-copyright p {
   margin: 0;

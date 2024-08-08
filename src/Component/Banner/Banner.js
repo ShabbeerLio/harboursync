@@ -15,24 +15,18 @@ const Banner = () => {
           </video>
           {/* <img src={bannerimg} alt="grandthum bhutani group" /> */}
         </div>
-        {/* <div className="banner-bottom">
-                    <div className="banner-items">
-                        <div className="banner-card">
-                            <FaBriefcase />
-                            <div className="banner-card-detail">
-                                <h4>Office Space</h4>
-                                <p>Lockable Office Space </p>
-                            </div>
-                        </div>
-                        <div className="banner-card">
-                            <FaCartShopping />
-                            <div className="banner-card-detail">
-                                <h4>Retail Space</h4>
-                                <p>Lockable Retail Space</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+        <div className="banner-bottom">
+          <div className="banner-items">
+            <div className="banner-card">
+              {/* <FaCartShopping /> */}
+              <div className="banner-card-detail">
+                {/* <span>Your need our provision</span> */}
+                <h4>Your need our provision</h4>
+                {/* <p>You Need Our Provision</p> */}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

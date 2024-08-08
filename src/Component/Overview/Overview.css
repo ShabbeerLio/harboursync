@@ -78,9 +78,13 @@
     flex-wrap: wrap;
   }
 
-  .overview-left,
+  .overview-left{
+    width: 100%;
+    order: 2;
+  }
   .overview-right {
     width: 100%;
+    order: 1;
   }
 
   .category-card {
