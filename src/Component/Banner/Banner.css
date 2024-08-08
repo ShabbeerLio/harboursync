@@ -38,6 +38,12 @@
   overflow: hidden;
 }
 
+.banner img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
 .banner video {
   height: 100vh;
   width: 100%;
@@ -177,9 +183,7 @@
   }
 
   .banner img {
-    width: 100%;
     height: 65vh;
-    object-fit: cover;
   }
 
   .banner-items {
