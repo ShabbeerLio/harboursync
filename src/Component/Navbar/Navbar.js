@@ -99,7 +99,7 @@ const Navbar = (props) => {
                                         href="#"
                                     // onClick={() => handleLinkClick('/')}
                                     >
-                                        <img src={Logo} alt="" />
+                                        <img src={Logo} alt="HARBOURSYNC EXPIMP PRIVATE LIMITED" />
                                     </a>
                                 </div>
                             </div>

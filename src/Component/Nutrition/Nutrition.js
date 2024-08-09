@@ -57,7 +57,7 @@ const Nutrition = () => {
             </div>
           </div>
           <div className="nutrition-mid">
-            <img src={nutimg} alt="" />
+            <img src={nutimg} alt="Fox Nuts" />
             <div className="nutrition-mid-desc">
               <div className="nutrition-mid-desc-box">
                 <h4>Fox Nuts</h4>

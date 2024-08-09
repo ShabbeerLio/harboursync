@@ -12,7 +12,7 @@ const Footer = (props) => {
           <div className="footer-detail-box">
             <div className="footer-left">
               <a href="#home">
-                <img className="image2" src={Aboutimg} alt="" />
+                <img className="image2" src={Aboutimg} alt="harboursyncexpimp" />
               </a>
             </div>
             <div className="footer-right-quick">

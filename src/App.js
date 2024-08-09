@@ -36,8 +36,8 @@ function App() {
             exact
             element={
               <Home
-                title={"HARBOURSYNC EXPIMP"}
-                descriptions={"HARBOURSYNC EXPIMP"}
+                title={"HARBOURSYNC EXPIMP PRIVATE LIMITED"}
+                descriptions={"HARBOURSYNC EXPIMP PRIVATE LIMITED , It is a dynamic export company committed to bridging international markets with high-quality products and services."}
               />} />
         </Routes>
         <Footer />

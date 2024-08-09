@@ -5,9 +5,9 @@ const NutritionCard = ({ data }) => {
 
     return (
     <div className="nutrition-card">
-      <h2>
+      <h3>
         {data?.nutrition} <span>{data?.measure}</span>
-      </h2>
+      </h3>
       <p>{data?.title}</p>
     </div>
   );

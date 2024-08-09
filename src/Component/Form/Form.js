@@ -35,10 +35,10 @@ const Form = () => {
         }, 2500);
 
         emailjs.sendForm(
-            // 'service_doayfq4',
-            // 'template_vi0ghkl',
+            'service_m3xjc5m',
+            'template_a6ldd77',
             form.current,
-            // 'Iejd5R2PTV0wvsSiQ'
+            '1u99tFJNd-GfmnYvg'
         )
             .then((result) => {
                 console.log(result.text);
@@ -66,7 +66,7 @@ const Form = () => {
     
     return (
         <>
-            <h4>Drop Us a Line</h4>
+            <h6 className='drop-line'>Drop Us a Line</h6>
             {messageSent ? (
                 <div className='form-message'>
                     <p>Message sent successfully!</p>

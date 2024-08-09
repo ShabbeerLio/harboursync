@@ -9,18 +9,6 @@
   justify-content: center;
 }
 
-.banner-heading h1 {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  background-color: #2077ba91;
-  padding: 20px 50px;
-  visibility: visible;
-  animation-delay: 0.4s;
-  font-size: 54px;
-  font-weight: 600;
-  border-radius: 8px;
-}
-
 .banner-image:after {
   content: "";
   position: absolute;
@@ -42,13 +30,6 @@
   width: 100%;
   height: 100vh;
   object-fit: cover;
-}
-
-.banner video {
-  height: 100vh;
-  width: 100%;
-  object-fit: cover;
-  filter: brightness(70%);
 }
 
 @keyframes breathe {
@@ -114,14 +95,14 @@
   margin-right: 10px;
 }
 
-.banner-card h4 {
+.banner-card h1 {
   margin: 0;
   margin-bottom: 5px;
   font-size: 45px;
   text-transform: uppercase;
 }
 
-.banner-card h4:after {
+.banner-card h1:after {
   content: "";
   margin-top: 2px;
   display: flex;
@@ -152,12 +133,6 @@
   .banner-items {
     position: static;
     padding-top: 2rem;
-  }
-  .banner video {
-    height: 75vh;
-    width: 100%;
-    object-fit: cover;
-    filter: brightness(70%);
   }
 
   .banner-card {
@@ -200,15 +175,12 @@
     width: 100%;
   }
 
-  .banner-card h4 {
+  .banner-card h1 {
     text-align: center;
   }
-  
-  .banner-card h4:after {
-    width: 100%;
-  }
 
-  .banner-card h4:after {
+  .banner-card h1:after {
+    width: 100%;
     background-color: white;
   }
 }

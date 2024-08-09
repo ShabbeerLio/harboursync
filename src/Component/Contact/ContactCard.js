@@ -4,9 +4,9 @@ import "./Contact.css"
 const ContactCard = ({ item }) => {
     return (
         <div className="contact-card">
-            <img src={item.cover} alt="" />
+            <img src={item.cover} alt="HARBOURSYNC EXPIMP PRIVATE LIMITED" />
             <div className="contact-detail">
-                <h4>{item.name}</h4>
+                <h5>{item.name}</h5>
                 <p>{item.prof}</p>
             </div>
         </div>

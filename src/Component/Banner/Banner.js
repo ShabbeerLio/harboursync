@@ -1,8 +1,6 @@
 import React from "react";
-import bannerimg from "../../Assets/Banner/banner.jpg";
-import bannervid from "../../Assets/Banner/banner.mp4";
+import bannerimg from "../../Assets/Banner/venti-views-FPKnAO-CF6M-unsplash.jpg";
 import "./Banner.css";
-// import { FaBriefcase, FaCartShopping, } from "react-icons/fa6";
 
 const Banner = () => {
   return (
@@ -10,10 +8,7 @@ const Banner = () => {
       <div className="banner">
         <div className="banner-heading"></div>
         <div className="banner-image">
-          <video loop muted autoPlay>
-            <source src={bannervid} type="video/mp4" />
-          </video>
-          {/* <img src={bannerimg} alt="grandthum bhutani group" /> */}
+          <img src={bannerimg} alt="HARBOURSYNC EXPIMP PRIVATE LIMITED" />
         </div>
         <div className="banner-bottom">
           <div className="banner-items">
@@ -21,7 +16,7 @@ const Banner = () => {
               {/* <FaCartShopping /> */}
               <div className="banner-card-detail">
                 {/* <span>Your need our provision</span> */}
-                <h4>Your need our provision</h4>
+                <h1>Your need our provision</h1>
                 {/* <p>You Need Our Provision</p> */}
               </div>
             </div>

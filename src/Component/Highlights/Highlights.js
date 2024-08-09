@@ -38,12 +38,12 @@ const Highlights = () => {
             <div className='Highlights-main'>
                 <div className="highlights-item">
                     <div className="highlights-right">
-                        <img src={high} alt="bhutani grandthum office space" />
+                        <img src={high} alt="Fox Nuts" />
                     </div>
                     <div className="highlights-left">
                         <div className="about-title">
                             <span>Health benefits</span>
-                            <h1>Health benefits</h1>
+                            <h2>Health benefits</h2>
                         </div>
                         <ul>
                             {HighlightsData.map((item) => (

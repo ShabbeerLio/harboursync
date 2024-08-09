@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import "./Overview.css"
-import Form from '../Form/Form'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import ScrollReveal from 'scrollreveal'
@@ -39,13 +38,13 @@ const Overview = () => {
                 <div className="overview-item">
                     <div className="overview-left">
                         <div className="overview-form">
-                            <img src={overimg} alt="" />
+                            <img src={overimg} alt="harboursyncexpimp" />
                         </div>
                     </div>
                     <div className="overview-right">
                         <div className="about-title">
                             <span>Overview</span>
-                            <h1>Overview</h1>
+                            <h2>Overview</h2>
                         </div>
                         <div className="overview-detail">
                             <p>At the heart of HARBOURSYNC’s operations is a dedication to quality and customer satisfaction. The company employs a robust quality control system that ensures every shipment adheres to the highest standards of excellence. This commitment to quality has earned HARBOURSYNC a reputation for reliability and trustworthiness in the international trade community.</p>

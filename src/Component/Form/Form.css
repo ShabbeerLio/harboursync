@@ -16,3 +16,8 @@
   min-height: 120px;
   resize: vertical;
 }
+
+.drop-line{
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
