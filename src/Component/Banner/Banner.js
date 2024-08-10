@@ -16,7 +16,7 @@ const Banner = () => {
               {/* <FaCartShopping /> */}
               <div className="banner-card-detail">
                 {/* <span>Your need our provision</span> */}
-                <h1>Your need our provision</h1>
+                <h1>Your Trusted Partner in Global Trade</h1>
                 {/* <p>You Need Our Provision</p> */}
               </div>
             </div>
