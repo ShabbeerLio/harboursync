@@ -50,12 +50,12 @@ const Home = (props) => {
              const script = document.createElement('script');
              script.id = gaScriptId;
              script.async = true;
-            //  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-NMNPYY3GZ2';
+             script.src = 'https://www.googletagmanager.com/gtag/js?id=G-T0SDXKTE6T';
              document.head.appendChild(script);
  
              script.onload = () => {
                  gtag('js', new Date());
-                //  gtag('config', 'G-NMNPYY3GZ2');
+                 gtag('config', 'G-T0SDXKTE6T');
              };
          }
 
