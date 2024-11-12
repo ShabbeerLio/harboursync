@@ -18,7 +18,8 @@
 }
 
 .footer-detail-box {
-  display: flex;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #adadad;
@@ -75,7 +76,7 @@
 .footer-right-quick ul li {
   display: flex;
   align-items: center;
-  padding-right: 20px;
+  padding: 8px;
 }
 
 .footer-right-quick ul li a {
@@ -148,8 +149,7 @@
     max-width: 520px;
   }
   .footer-detail-box {
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: repeat(1,1fr);
     padding-top: 2rem;
     margin-top: 2rem;
   }
