@@ -100,6 +100,7 @@
 .footer-copyright p {
   margin: 0;
   font-size: 14px;
+  text-align: center;
 }
 
 @media (min-width: 1200px) {
@@ -146,6 +147,12 @@
   .Footer-main {
     max-width: 520px;
   }
+  .footer-detail-box {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
 }
 
 @media only screen and (max-width: 420px) {
@@ -164,13 +171,6 @@
   .footer-right-quick ul {
     justify-content: center;
     flex-wrap: wrap;
-  }
-
-  .footer-detail-box {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 2rem;
-    margin-top: 2rem;
   }
 
   .footer-right-quick ul li {
