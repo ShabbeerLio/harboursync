@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Products.css";
 import ScrollReveal from "scrollreveal";
-import makhana from "../../Assets/Products/makhana.jpg"
+import makhana from "../../Assets/Products/IMG_20241112_095445_708.png"
 
 const Products = () => {
   useEffect(() => {
@@ -38,18 +38,9 @@ const Products = () => {
         </div>
         <div className="Products-box">
           <div className="product-box-left">
-            <h2>Fox Nuts (Makhana)</h2>
+            <h2>Makhana (Fox Nuts)</h2>
             <p>
-              Fox nuts, also known as makhana or lotus seeds, is a nutrient-rich
-              snack derived from the seeds of the Euryale ferox plant, commonly
-              found in India and parts of Asia. Revered in traditional medicine
-              for its health benefits, makhana is high in protein, fiber, and
-              essential minerals like magnesium and potassium. Low in fat and
-              calories, it's a popular choice for weight management and heart
-              health. Its antioxidant properties support cellular health and
-              combat inflammation. Typically consumed roasted, makhana is a
-              versatile ingredient in various culinary preparations, including
-              snacks, sweets, and savory dishes.
+              Makhana, also known as fox nuts, is primarily cultivated in the heart of Bihar, India, where the fertile soil and favorable climate create ideal growing conditions. The state’s wetland areas  offer the perfect environment for its cultivation. Grown in waterlogged fields, the Makhana plant thrives in shallow ponds and lakes, where its seeds are harvested after a labor-intensive process. Bihar contributes significantly to India’s Makhana production, with the crop being an essential part of local agriculture and a major export product. The seeds are processed into a variety of snacks and medicinal products.
             </p>
           </div>
           <div className="product-box-right">

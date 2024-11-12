@@ -135,16 +135,16 @@ const Navbar = (props) => {
                                                 href="#about"
                                                 onClick={() => handleLinkClick('#about')}
                                             >
-                                                About
+                                                About Us
                                             </a>
                                         </li>
-                                        <li className="nav-item">
+                                        {/* <li className="nav-item">
                                             <a
                                                 className={`nav-link ${activeLink === '#overview' ? 'active' : ''}`}
                                                 href="#overview"
                                                 onClick={() => handleLinkClick('#overview')}
                                             >Overview</a>
-                                        </li>
+                                        </li> */}
                                         <li className="nav-item dropdown">
                                             <a className="nav-link dropdown-toggle"
                                                 href="#" id="navbarDropdown"

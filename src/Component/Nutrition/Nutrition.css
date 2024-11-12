@@ -18,11 +18,11 @@
 }
 
 .nutrition-left {
-    width: 25%;
+    width: 30%;
 }
 
 .nutrition-mid {
-    width: 50%;
+    width: 40%;
     position: relative;
     display: flex;
     align-items: center;
@@ -45,11 +45,12 @@
     background-color: rgba(0, 0, 0, 0.37);
 }
 .nutrition-mid-desc .nutrition-mid-desc-box h4{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 800;
     color: white;
     position: relative;
     z-index: 2;
+    text-align: center;
 }
 .nutrition-mid-desc .nutrition-mid-desc-box p{
     font-size: 20px;
@@ -58,7 +59,7 @@
 }
 
 .nutrition-mid img {
-    width: 80%;
+    width: 85%;
     position: relative;
     z-index: 2;
 }
@@ -76,7 +77,7 @@
 } */
 
 .nutrition-right {
-    width: 25%;
+    width: 30%;
 }
 
 @media (min-width: 1200px) {

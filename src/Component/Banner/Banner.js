@@ -1,5 +1,5 @@
 import React from "react";
-import bannerimg from "../../Assets/Banner/venti-views-FPKnAO-CF6M-unsplash.jpg";
+import bannerimg from "../../Assets/Banner/IMG_20241108_112420_886.png";
 import "./Banner.css";
 
 const Banner = () => {

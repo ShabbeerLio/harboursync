@@ -3,7 +3,7 @@
     width: 100%;
     background-color: #fafafa;
     background-attachment: fixed;
-    background-image: url("../../Assets/Director/contact.jpeg");
+    background-image: url("../../Assets/Director/IMG_20241112_213944_017.png");
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,6 +20,8 @@
 
 .Contact-box {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -31,6 +33,25 @@
     justify-self: center;
     flex-direction: column;
 }
+.Contact-box-left h5{
+   color: white;
+   font-size: 25px;
+   text-align: center;
+   text-transform: uppercase;
+}
+.Contact-box-left img{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/2;
+    border-radius: 8px;
+}
+
+.certifications{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
 
 .contact-card{
     display: flex;
@@ -60,7 +81,7 @@
 }
 
 .Contact-box-right {
-    width: 50%;
+    width: 70%;
     background-color: #1a677aab;
     border-radius: 8px;
     padding: 2rem;

@@ -69,9 +69,9 @@ const Home = (props) => {
             <section className="Banner-box" id="about">
                 <About />
             </section>
-            <section className="Banner-box" id="overview">
+            {/* <section className="Banner-box" id="overview">
                 <Overview />
-            </section>
+            </section> */}
             <section className="Banner-box" id="fox-nuts">
                 <Products />
                 <Highlights />

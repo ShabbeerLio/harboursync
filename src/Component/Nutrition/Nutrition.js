@@ -51,7 +51,7 @@ const Nutrition = () => {
         <div className="Nutrition-box">
           <div className="nutrition-left">
             <div className="nutrition-item">
-              {NutritionData.slice(1, 5).map((item) => (
+              {NutritionData.slice(0, 4).map((item) => (
                 <NutritionCard data={item} key={item.id} />
               ))}
             </div>
@@ -60,14 +60,14 @@ const Nutrition = () => {
             <img src={nutimg} alt="Fox Nuts" />
             <div className="nutrition-mid-desc">
               <div className="nutrition-mid-desc-box">
-                <h4>Fox Nuts</h4>
-                <p>approximate breakdown per 100 grams</p>
+                <h4>Makhana can be consumed in various ways</h4>
+                {/* <p>Makhana (fox nuts) consumed in various ways</p> */}
               </div>
             </div>
           </div>
           <div className="nutrition-right">
             <div className="nutrition-item">
-              {NutritionData.slice(6, 10).map((item) => (
+              {NutritionData.slice(4, 8).map((item) => (
                 <NutritionCard data={item} key={item.id} />
               ))}
             </div>

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import "./Highlights.css"
-import high from "../../Assets/Highlights/highlights.jpeg"
+import high from "../../Assets/Highlights/IMG_20241112_095510_747.png"
 import HighlightsData from './HighlightsData';
 import { IoCheckmarkCircle } from "react-icons/io5";
 import ScrollReveal from 'scrollreveal'
