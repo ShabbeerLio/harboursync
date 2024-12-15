@@ -153,8 +153,9 @@
     text-align: center;
   }
 
-  .banner-heading h1 {
-    font-size: 30px;
+  .banner-card h1 {
+    font-size: 40px;
+    font-weight: 600;
   }
 
   .banner img {

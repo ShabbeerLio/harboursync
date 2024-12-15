@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Contact.css";
 import Form from "../Form/Form";
 import ScrollReveal from "scrollreveal";
-import overimg from "../../Assets/Overview/Brand.png";
+// import overimg from "../../Assets/Overview/Brand.png";
 import c1 from "../../Assets/Overview/c1.png";
 import c2 from "../../Assets/Overview/c2.png";
 
@@ -38,12 +38,12 @@ const Contact = () => {
       <div className="Contact-main">
         <div className="Contact-box">
           <div className="Contact-box-left">
-            <div className="brand-box">
+            {/* <div className="brand-box">
               <h5>Our Brand</h5>
               <div className="brand">
                 <img src={overimg} alt="harboursyncexpimp" />
               </div>
-            </div>
+            </div> */}
             <div className="certifications-box">
             <h5>Certifications</h5>
               <div className="certifications">
